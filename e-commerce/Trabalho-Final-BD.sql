@@ -1,6 +1,3 @@
-Rodar na sequência
-
-
 CREATE TABLE "funcionario" (
   "codigo_func" serial Not Null,
   "nome_func" varchar(50) Not Null ,
@@ -98,16 +95,45 @@ INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES
 
 
 INSERT INTO endereco(logradouro, complemento, bairro, cidade, "UF", cep)VALUES
-('Rua Melo Franco', '200', 'Alto', 'Teresópolis', 'RJ', 25960530),
-('Rua Braga', '210', 'Varzea', 'Teresópolis', 'RJ', 25960630);
+('Rua Melo Franco', '200', 'Alto', 'Teresópolis', 'RJ', 25960530);
+
+insert into endereco(logradouro, complemento, bairro, cidade, "UF", cep) values
+('Rua Braga', '210', 'Varzea', 'Teresópolis', 'RJ', 25960630),
+('Rua dos Montes', '192', 'Rosario', 'Petropolis', 'RJ', 25785432),
+('Avenida Oliveira Botelho', '1092', 'Vargem Grande', 'Nazare', 'SP', 26543279),
+('Estrada das Figueiras', '562', 'Gradim', 'Niteroi', 'ES', 27653489),
+('Rua Sem Saída', '01', 'Morro de Deus', 'Itaipuacu', 'RJ', 20983000),
+('Rua dos Passaros', 's/n', 'Posse', 'Carmo', 'SP', 25967854);
 
 
 
 INSERT INTO contato(telefone_fixo, telefone_celular, email)
 VALUES('2126425875', '21999826532', 'luiz@gmail.com');
 
+insert into contato(telefone_fixo, telefone_celular, email)
+values('2226578954','22985432765', 'fernada@hotmail.com'),
+('2126785490', '21908725321', 'lauro1@uol.com'),
+('2127124456', '21988765433', 'mamalurdes@gmail.com'),
+('2126423455', '21987650283', 'joaomoura@gmail.com'),
+('2227856643', '21999926544', 'pessoaant@hotmail.com');
+
 INSERT INTO cliente(cpf_cliente, nomecompleto_cliente, login_cliente, senha_cliente, codigo_contato, data_nasc_cliente, codigo_endereco, data_de_cadastro)
 VALUES('55937547055', 'Luiz Carlos Martins', 'martins', 'mar123', 1, '1985-05-03', 1, '2022-03-03');
+
+INSERT INTO cliente(cpf_cliente, nomecompleto_cliente, login_cliente, senha_cliente, codigo_contato, data_nasc_cliente, codigo_endereco, data_de_cadastro)
+VALUES('88783825070', 'Fernanda Abreu Silva', 'fernanda', 'fefe12', 2, '1996-08-23', 2, '2022-03-07');
+
+INSERT INTO cliente(cpf_cliente, nomecompleto_cliente, login_cliente, senha_cliente, codigo_contato, data_nasc_cliente, codigo_endereco, data_de_cadastro)
+VALUES('01687733686', 'Lauro Cunha Bezerra', 'lauro2021', 'cunhalauro', 3, '1984-02-29', 3, '2021-08-21');
+
+INSERT INTO cliente(cpf_cliente, nomecompleto_cliente, login_cliente, senha_cliente, codigo_contato, data_nasc_cliente, codigo_endereco, data_de_cadastro)
+VALUES('17366281867', 'Maria de Lurdes Figueira', 'mamalurdes', '2735ma', 4, '1955-09-02', 4, '2021-05-11');
+
+INSERT INTO cliente(cpf_cliente, nomecompleto_cliente, login_cliente, senha_cliente, codigo_contato, data_nasc_cliente, codigo_endereco, data_de_cadastro)
+VALUES('72739071205', 'João Francisco Moura', 'mourajoao', '2022Joao', 5, '1985-04-16', 5, '2021-06-17');
+
+INSERT INTO cliente(cpf_cliente, nomecompleto_cliente, login_cliente, senha_cliente, codigo_contato, data_nasc_cliente, codigo_endereco, data_de_cadastro)
+VALUES('77389324651', 'Antonia Pessoa', 'antoninha', 'ant0nia', 6, '2000-07-26', 6, '2022-03-27');
 
 ----------------------------------------------------------------------------------------------------
 INSERT INTO categoria(nome_categoria)values
@@ -115,7 +141,10 @@ INSERT INTO categoria(nome_categoria)values
 ('Perfumaria'),
 ('Maquiagem');
 
-
+INSERT INTO categoria(nome_categoria)values
+('Skincare'),
+('Coloração'),
+('Esmalteria');
 
 
 INSERT INTO produto(nome_produto, qtd_estoque, data_fabricacao, vl_unitario, data_cadastro, codigo_func, codigo_categoria)
@@ -134,7 +163,7 @@ INSERT INTO produto(nome_produto, qtd_estoque, data_fabricacao, vl_unitario, dat
 VALUES('Óleo Capilar Argan',200,'2022-01-25',34.90,'2022-01-30 00:00:00',1,1);
 
 INSERT INTO produto(nome_produto, qtd_estoque, data_fabricacao, vl_unitario, data_cadastro, codigo_func, codigo_categoria)values
-('Sabonete Líquido Mediterranêo',176,'2021-12-05',25.99,'2022-03-01 00:00:00',1,2);
+('Sabonete Líquido Mediterrâneo',176,'2021-12-05',25.99,'2022-03-01 00:00:00',1,2);
 
 INSERT INTO produto(nome_produto, qtd_estoque, data_fabricacao, vl_unitario, data_cadastro, codigo_func, codigo_categoria)values
 ('Sabonete Barra Amazônia ',198,'2021-12-15',6.99,'2022-01-25 00:00:00',1,2);
@@ -155,22 +184,11 @@ INSERT INTO produto (nome_produto,qtd_estoque,data_fabricacao,vl_unitario,data_c
  ('Rímel Sensacional',231,'2021-12-16',49.99,'2022-03-01 00:00:00',2,3);
 	
 INSERT INTO produto (nome_produto,qtd_estoque,data_fabricacao,vl_unitario,data_cadastro,codigo_func,codigo_categoria) VALUES
- ('Pó Ilumidador Ilumina Geral',166,'2021-12-15',39.99,'2022-01-25 00:00:00',1,3);
+ ('Pó Iluminador Ilumina Geral',166,'2021-12-15',39.99,'2022-01-25 00:00:00',1,3);
 	
 INSERT INTO produto (nome_produto,qtd_estoque,data_fabricacao,vl_unitario,data_cadastro,codigo_func,codigo_categoria) VALUES
  ('Paleta de sombra Tons pastéis',172,'2021-12-17',99.99,'2022-03-06 00:00:00',2,3);
 	
 INSERT INTO produto (nome_produto,qtd_estoque,data_fabricacao,vl_unitario,data_cadastro,codigo_func,codigo_categoria) VALUES
- ('Baton Líquido Nude',135,'2021-11-25',54.90,'2022-02-15 00:00:00',2,3);
-	
-
-
-
-
-
-
-
-
-
-
-
+ ('Batom Líquido Nude',135,'2021-11-25',54.90,'2022-02-15 00:00:00',2,3);
+ 
