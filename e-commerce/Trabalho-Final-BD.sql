@@ -105,6 +105,7 @@ INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES
 INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES 
 ('Bruno Gagliasso', '93168640700', 1500);
 
+
 INSERT INTO endereco(logradouro, complemento, bairro, cidade, "UF", cep)VALUES
 ('Rua Melo Franco', '200', 'Alto', 'Teresópolis', 'RJ', 25960530);
 
@@ -204,4 +205,32 @@ INSERT INTO produto (nome_produto,qtd_estoque,data_fabricacao,vl_unitario,data_c
  ('Batom Líquido Nude',135,'2021-11-25',54.90,'2022-02-15 00:00:00',2,3);
 
 
+INSERT INTO produto(nome_produto, qtd_estoque, data_fabricacao, vl_unitario, data_cadastro, codigo_func, codigo_categoria)
+VALUES('Vitamina C',122,'2022-02-15',118.99,'2022-03-20 00:00:00',3,4);
+
+INSERT INTO produto(nome_produto, qtd_estoque, data_fabricacao, vl_unitario, data_cadastro, codigo_func, codigo_categoria)
+VALUES('Argila Verde',141,'2021-12-25',18.99,'2021-12-22 00:00:00',4,4);
+
+INSERT INTO produto(nome_produto, qtd_estoque, data_fabricacao, vl_unitario, data_cadastro, codigo_func, codigo_categoria)
+VALUES('Tinta Loiro Mel',100,'2022-01-15',28.99,'2021-12-12 00:00:00',5,5);
+
+INSERT INTO produto(nome_produto, qtd_estoque, data_fabricacao, vl_unitario, data_cadastro, codigo_func, codigo_categoria)
+VALUES('Po descolorante',110,'2022-02-05',21.99,'2022-01-22 00:00:00',4,5);
+
+INSERT INTO produto(nome_produto, qtd_estoque, data_fabricacao, vl_unitario, data_cadastro, codigo_func, codigo_categoria)
+VALUES('Esmalte Bege',132,'2022-03-25',8.99,'2022-04-01 00:00:00',5,6);
+
+INSERT INTO produto(nome_produto, qtd_estoque, data_fabricacao, vl_unitario, data_cadastro, codigo_func, codigo_categoria)
+VALUES('Acetona',121,'2021-12-25',4.99,'2022-03-13 00:00:00',4,6);
+
+---------------------------------------------------------------------------------------------------------------------------------------------
  
+insert into pedido(quantidade_comprada, codigo_produto, codigo_cliente)
+values (2, 5, 6),
+(3, 20, 1),
+(5, 15, 4),
+(1, 11, 2),
+(3, 9, 5),
+(2, 2, 3);
+
+---------------------------------------------------------------------------------------------------------------------------------------------
