@@ -94,16 +94,18 @@ INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES
 ('Larissa Manoela', '17591845004', 2500);
 
 INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES 
-('Frederico Silva', '14982253333', 2100),
+('Frederico Silva', '14982253333', 2100);
 
 INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES 
-('Neymar Junior', '85732551379', 2200),
+('Neymar Junior', '85732551379', 2200);
 
 INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES 
-('Priscila Alcantara', '56235654413', 1800),
+('Priscila Alcantara', '56235654413', 1800);
 
 INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES 
 ('Bruno Gagliasso', '93168640700', 1500);
+
+select * from funcionario;
 
 
 INSERT INTO endereco(logradouro, complemento, bairro, cidade, "UF", cep)VALUES
@@ -117,7 +119,7 @@ insert into endereco(logradouro, complemento, bairro, cidade, "UF", cep) values
 ('Rua Sem Saída', '01', 'Morro de Deus', 'Itaipuacu', 'RJ', 20983000),
 ('Rua dos Passaros', 's/n', 'Posse', 'Carmo', 'SP', 25967854);
 
-
+select * from endereco;
 
 INSERT INTO contato(telefone_fixo, telefone_celular, email)
 VALUES('2126425875', '21999826532', 'luiz@gmail.com');
@@ -128,6 +130,8 @@ values('2226578954','22985432765', 'fernada@hotmail.com'),
 ('2127124456', '21988765433', 'mamalurdes@gmail.com'),
 ('2126423455', '21987650283', 'joaomoura@gmail.com'),
 ('2227856643', '21999926544', 'pessoaant@hotmail.com');
+
+select * from contato;
 
 INSERT INTO cliente(cpf_cliente, nomecompleto_cliente, login_cliente, senha_cliente, codigo_contato, data_nasc_cliente, codigo_endereco, data_de_cadastro)
 VALUES('55937547055', 'Luiz Carlos Martins', 'martins', 'mar123', 1, '1985-05-03', 1, '2022-03-03');
@@ -147,6 +151,9 @@ VALUES('72739071205', 'João Francisco Moura', 'mourajoao', '2022Joao', 5, '1985-
 INSERT INTO cliente(cpf_cliente, nomecompleto_cliente, login_cliente, senha_cliente, codigo_contato, data_nasc_cliente, codigo_endereco, data_de_cadastro)
 VALUES('77389324651', 'Antonia Pessoa', 'antoninha', 'ant0nia', 6, '2000-07-26', 6, '2022-03-27');
 
+select * from cliente;
+
+
 ----------------------------------------------------------------------------------------------------
 INSERT INTO categoria(nome_categoria)values
 ('Cabelo'),
@@ -157,6 +164,8 @@ INSERT INTO categoria(nome_categoria)values
 ('Skincare'),
 ('Coloração'),
 ('Esmalteria');
+
+select * from categoria;
 
 
 INSERT INTO produto(nome_produto, qtd_estoque, data_fabricacao, vl_unitario, data_cadastro, codigo_func, codigo_categoria)
@@ -223,6 +232,8 @@ VALUES('Esmalte Bege',132,'2022-03-25',8.99,'2022-04-01 00:00:00',5,6);
 INSERT INTO produto(nome_produto, qtd_estoque, data_fabricacao, vl_unitario, data_cadastro, codigo_func, codigo_categoria)
 VALUES('Acetona',121,'2021-12-25',4.99,'2022-03-13 00:00:00',4,6);
 
+select * from produto;
+
 ---------------------------------------------------------------------------------------------------------------------------------------------
  
 insert into pedido(quantidade_comprada, codigo_produto, codigo_cliente)
@@ -232,5 +243,7 @@ values (2, 5, 6),
 (1, 11, 2),
 (3, 9, 5),
 (2, 2, 3);
+
+select * from pedido;
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
