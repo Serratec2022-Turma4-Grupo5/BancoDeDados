@@ -93,6 +93,17 @@ INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES
 ('João Gomes', '14432253045', 2500),
 ('Larissa Manoela', '17591845004', 2500);
 
+INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES 
+('Frederico Silva', '14982253333', 2100),
+
+INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES 
+('Neymar Junior', '85732551379', 2200),
+
+INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES 
+('Priscila Alcantara', '56235654413', 1800),
+
+INSERT INTO funcionario(nome_func, cpf_func, salario) VALUES 
+('Bruno Gagliasso', '93168640700', 1500);
 
 INSERT INTO endereco(logradouro, complemento, bairro, cidade, "UF", cep)VALUES
 ('Rua Melo Franco', '200', 'Alto', 'Teresópolis', 'RJ', 25960530);
@@ -191,4 +202,6 @@ INSERT INTO produto (nome_produto,qtd_estoque,data_fabricacao,vl_unitario,data_c
 	
 INSERT INTO produto (nome_produto,qtd_estoque,data_fabricacao,vl_unitario,data_cadastro,codigo_func,codigo_categoria) VALUES
  ('Batom Líquido Nude',135,'2021-11-25',54.90,'2022-02-15 00:00:00',2,3);
+
+
  
